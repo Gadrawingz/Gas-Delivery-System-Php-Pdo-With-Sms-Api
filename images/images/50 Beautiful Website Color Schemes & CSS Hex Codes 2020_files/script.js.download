@@ -1,0 +1,403 @@
+/**
+ * Parallax Scrolling Tutorial
+ * For NetTuts+
+ *
+ * Author: Mohiuddin Parekh
+ *	http://www.mohi.me
+ * 	@mohiuddinparekh
+ */
+
+
+
+$(document).ready(function(){
+	// Cache the Window object
+	$window = $(window);
+
+   $('section[data-type="background"]').each(function(){
+     var $bgobj = $(this); // assigning the object
+
+      $(window).scroll(function() {
+
+		// Scroll the background at var speed
+		// the yPos is a negative value because we're scrolling it UP!
+		var yPos = -($window.scrollTop() / $bgobj.data('speed'));
+
+		// Put together our final background position
+		var coords = '50% '+ yPos + 'px';
+
+		// Move the background
+		$bgobj.css({ backgroundPosition: coords });
+
+}); // window scroll Ends
+
+ });
+
+});
+/*
+ * Create HTML5 elements for IE's sake
+ */
+
+document.createElement("article");
+document.createElement("section");
+
+$(function() {
+	  $('a[href*=#]:not([href=#])').click(function() {
+	    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	      var target = $(this.hash);
+	      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	      if (target.length) {
+	        $('html,body').animate({
+	          scrollTop: target.offset().top
+	        }, 1000);
+	        return false;
+	      }
+	    }
+	  });
+	});
+
+
+
+	$(document).ready(function() {
+		var stickyNavTop = $('.header').offset().top;
+		var stickyNav = function(){
+		var scrollTop = $(window).scrollTop();
+		if (scrollTop > stickyNavTop) {
+			$('.header.home-header-sticky').addClass('sticky2');
+		} else {
+			$('.header.home-header-sticky').removeClass('sticky2');
+		}
+	};
+
+stickyNav();
+
+$(window).scroll(function() {
+    stickyNav();
+});
+});
+
+
+
+
+
+
+
+var $window = $(window); //You forgot this line in the above example
+
+$(document).ready(function(){
+    $('section[data-type="background"]').each(function(){
+        var $bgobj = $(this); // assigning the object
+
+        $(window).scroll(function() {
+           var yPos = -( ($window.scrollTop() - $bgobj.offset().top) / $bgobj.data('speed'));
+
+            // Put together our final background position
+            var coords = '50% '+ yPos + 'px';
+
+            // Move the background
+            $bgobj.css({ backgroundPosition: coords });
+        });
+    });
+});
+
+
+
+$(document).ready(function(){
+    $(".post-3726 .white-show-hide-tab").click(function(){
+        $(".post-3726 .tab-content").slideToggle( "slow" );
+    });
+});
+
+
+$(document).ready(function(){
+    $(".post-3731 .white-show-hide-tab").click(function(){
+        $(".post-3731 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+$(document).ready(function(){
+    $(".post-3770 .white-show-hide-tab").click(function(){
+        $(".post-3770 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+$(document).ready(function(){
+    $(".responsive-design .big-deal").click(function(){
+        $(".responsive-design .tab-content").slideToggle( "slow" );
+    });
+});
+
+
+$(document).ready(function(){
+    $(".wordpress-design .big-deal").click(function(){
+        $(".wordpress-design .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+$(document).ready(function(){
+    $(".minneapolis-freelancer .big-deal").click(function(){
+        $(".minneapolis-freelancer .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+
+$(document).ready(function(){
+    $(".post-3776 .white-show-hide-tab").click(function(){
+        $(".post-3776 .tab-content").slideToggle( "slow" );
+    });
+});
+
+
+$(document).ready(function(){
+    $(".post-3778 .white-show-hide-tab").click(function(){
+        $(".post-3778 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+
+
+$(document).ready(function(){
+    $(".post-3807 .white-show-hide-tab").click(function(){
+        $(".post-3807 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+$(document).ready(function(){
+    $(".post-4185 .white-show-hide-tab").click(function(){
+        $(".post-4185 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+
+$(document).ready(function(){
+    $(".post-4182 .white-show-hide-tab").click(function(){
+        $(".post-4182 .tab-content").slideToggle( "slow" );
+    });
+
+});
+
+$(document).ready(function(){
+    $(".post-4179 .white-show-hide-tab").click(function(){
+        $(".post-4179 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-7071 .white-show-hide-tab").click(function(){
+        $(".post-7071 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-7186 .white-show-hide-tab").click(function(){
+        $(".post-7186 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-7184 .white-show-hide-tab").click(function(){
+        $(".post-7184 .tab-content").slideToggle( "slow" );
+    });
+ });
+
+$(document).ready(function(){
+    $(".post-7197 .white-show-hide-tab").click(function(){
+        $(".post-7197 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-7199 .white-show-hide-tab").click(function(){
+        $(".post-7199 .tab-content").slideToggle( "slow" );
+    });
+ });
+
+$(document).ready(function(){
+    $(".post-12140 .white-show-hide-tab").click(function(){
+        $(".post-12140 .tab-content").slideToggle( "slow" );
+    });
+ });
+
+$(document).ready(function(){
+    $(".post-12141 .white-show-hide-tab").click(function(){
+        $(".post-12141 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-12144 .white-show-hide-tab").click(function(){
+        $(".post-12144 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".post-12150 .white-show-hide-tab").click(function(){
+        $(".post-12150 .tab-content").slideToggle( "slow" );
+    });
+ });
+$(document).ready(function(){
+    $(".scholarship-toggle").click(function(){
+        $(".scholarship-content").slideToggle( "slow" );
+    });
+ });
+
+$(document).ready(function(){
+    $(".post-13274 .white-show-hide-tab").click(function(){
+        $(".post-13274 .tab-content").slideToggle( "slow" );
+    });
+ });
+
+
+$(document).ready(function(){
+$('.selectively-hide').hide();
+
+
+});
+
+$(document).ready(function() {
+    $("#team_slider").owlCarousel({
+        autoPlay: 5000,
+        items: 3,
+        loop: true,
+        pagination: false,
+        rewindNav: true,
+        navigation: true,
+        rewindSpeed: 0,
+        responsive: {
+            0: {
+                items: 3
+            },
+            600: {
+                items: 3
+            },
+            1000: {
+                items: 3
+            }
+        }
+    });
+	
+	$("#team_slider_new").owlCarousel({
+        autoPlay: 5000,
+        items: 3,
+        loop: true,
+        pagination: false,
+		margin:30,
+        rewindNav: true,
+        navigation: true,
+		navText: ['<i class="fa fa-angle-left" aria-hidden="true"></i>','<i class="fa fa-angle-right" aria-hidden="true"></i>'],
+        rewindSpeed: 0,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 2
+            },
+            900: {
+                items: 3
+            }
+        }
+    });
+	
+	
+});
+$(document).ready(function() {
+    $("#port_slider").owlCarousel({
+        autoPlay: 5000,
+        items: 1,
+        loop: true,
+        pagination: false,
+        rewindNav: true,
+        navigation: true,
+        rewindSpeed: 0,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+});
+
+
+
+ $(document).ready(function() {		
+      $("#featured_slider").owlCarousel({
+        autoPlay: 5000,
+        items : 1,
+      pagination : false,
+      navigation : true,
+      navigationText: [
+ "<i class='fa fa-angle-left'></i>",
+   "<i class='fa fa-angle-right'></i>"
+],
+        responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+      });
+
+    });
+
+
+
+ $(document).ready(function() {
+    $("#portfolioli-slider2").owlCarousel({
+         autoplay:true,
+            autoplayTimeout:5000,
+    autoplayHoverPause:false,
+        autoPlay: 5000,
+        lazyLoad: true,
+        items: 1,
+        loop: true,
+        pagination: false,
+        rewindNav: true,
+        navigation: true,
+        navigation : true,
+      navigationText: [
+ "<div class='left-arrow'></div>",
+   "<div class='right-arrow'></div>"
+],
+        rewindSpeed: 0,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 1
+            },
+            1000: {
+                items: 1
+            }
+        }
+    });
+});
+
+
+ var mycarousel = $('#portfolioli-slider2');
+
+mycarousel.on('loaded.owl.lazy', function(event) {
+
+    var nextpic = new Image();
+    var totitem = event.item.count + 2;     
+    var nextitem = event.item.index + 1;
+
+    if (nextitem <= totitem) {
+        var imgsrc = $(event.target).find('.gallery-item').eq(nextitem).find('img').data('src');
+        nextpic.src = imgsrc;
+    }
+
+});

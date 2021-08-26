@@ -1,0 +1,19 @@
+// source --> https://hookagency.com/wp-content/themes/tim-brown/js/home.landing.js 
+jQuery(document).ready(function($){
+	// $('#hamburger-icon').click(function(){
+	// $(".mobile-menu-handler").on("click touchend", function(e) {
+	$(document).on('click', '.mobile-menu-handler', function(){
+		$('#hamburger-icon').toggleClass('open');
+		$('.mobile-menu-container').toggleClass('open');
+		$('html,body').toggleClass('fixed');
+	});
+	if($('.header_video_iframe').length){
+		$(".header_video_iframe").fancybox({
+			autoSize    : true,
+		});
+	}
+	$(document).on('click', 'ul.mobile-menu-lists > li.menu-item-has-children > div.arr', function(){
+		$(this).next('ul').toggle();
+		$(this).toggleClass('open')
+	});
+});

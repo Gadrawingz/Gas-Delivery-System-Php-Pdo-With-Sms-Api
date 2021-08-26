@@ -1,0 +1,15 @@
+/*
+ Theme Name:   Colormag Child
+ Theme URI:    https://journal.hovatek.com/bpyeki/themes/colormag-child/
+ Description:  Colormag Child Theme
+ Author:       Hovatek
+ Author URI:   https://journal.hovatek.com
+ Template:     colormag
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  colormag
+*/
+@import url("../colormag/style.css");
+
